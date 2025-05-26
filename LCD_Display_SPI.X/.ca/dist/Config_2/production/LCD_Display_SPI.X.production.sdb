@@ -1,0 +1,656 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F913 ]
+[d frameptr 0 ]
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"5 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 4 0 ]
+"12 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/exp.c
+[v _exp exp `(d  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"13 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/floor.c
+[v _floor floor `(d  1 e 4 0 ]
+"43 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"254 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/frexp.c
+[v _frexp frexp `(d  1 e 4 0 ]
+"277
+[v _ldexp ldexp `(d  1 e 4 0 ]
+"5 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/log.c
+[v _log log `(d  1 e 4 0 ]
+"5 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/pow.c
+[v _pow pow `(d  1 e 4 0 ]
+"10 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"9 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 /Applications/microchip/xc8/v2.40/pic/sources/c90/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"233 /Users/s/MPLABXProjects/LCD_Display_SPI.X/main.c
+[v _SPI_CS_LOW SPI_CS_LOW `(v  1 e 1 0 ]
+"236
+[v _SPI_CS_HIGH SPI_CS_HIGH `(v  1 e 1 0 ]
+"240
+[v _SPI_DC_LOW SPI_DC_LOW `(v  1 e 1 0 ]
+"243
+[v _SPI_DC_HIGH SPI_DC_HIGH `(v  1 e 1 0 ]
+"247
+[v _SPI_MOSI_LOW SPI_MOSI_LOW `(v  1 e 1 0 ]
+"250
+[v _SPI_MOSI_HIGH SPI_MOSI_HIGH `(v  1 e 1 0 ]
+"254
+[v _SPI_SCK_LOW SPI_SCK_LOW `(v  1 e 1 0 ]
+"257
+[v _SPI_SCK_HIGH SPI_SCK_HIGH `(v  1 e 1 0 ]
+"265
+[v _init_Softwear_SPI init_Softwear_SPI `(v  1 e 1 0 ]
+"296
+[v _sendCommand sendCommand `(v  1 e 1 0 ]
+"310
+[v _sendCommand_and_8bit_Data sendCommand_and_8bit_Data `(v  1 e 1 0 ]
+"343
+[v _writeCommand writeCommand `(v  1 e 1 0 ]
+"358
+[v _spiWrite spiWrite `(v  1 e 1 0 ]
+"382
+[v _SPI_WRITE16 SPI_WRITE16 `(v  1 e 1 0 ]
+"397
+[v _setDisplayFillingMode setDisplayFillingMode `(v  1 e 1 0 ]
+"458
+[v _drawPixel drawPixel `(v  1 e 1 0 ]
+"550
+[v _setAddrWindow setAddrWindow `(v  1 e 1 0 ]
+"567
+[v _my_setAddrWindow my_setAddrWindow `(v  1 e 1 0 ]
+"580
+[v _init_Hardwear_SPI init_Hardwear_SPI `(v  1 e 1 0 ]
+"605
+[v _sendCommand_Hard sendCommand_Hard `(v  1 e 1 0 ]
+"615
+[v _writeCommand_Hard writeCommand_Hard `(v  1 e 1 0 ]
+"620
+[v _spi_send_recv spi_send_recv `(v  1 e 1 0 ]
+"625
+[v _SPI_WRITE16_Hard SPI_WRITE16_Hard `(v  1 e 1 0 ]
+"632
+[v _setAddrWindow_Hard setAddrWindow_Hard `(v  1 e 1 0 ]
+"643
+[v _my_setAddrWindow_Hard my_setAddrWindow_Hard `(v  1 e 1 0 ]
+"653
+[v _setAllDisplayPixels_Hard setAllDisplayPixels_Hard `(v  1 e 1 0 ]
+"668
+[v _drawFastHLine_Hard drawFastHLine_Hard `(v  1 e 1 0 ]
+"704
+[v _drawPixel_Hard drawPixel_Hard `(v  1 e 1 0 ]
+"777
+[v _vector_length vector_length `(f  1 e 4 0 ]
+"781
+[v _normalized normalized `(v  1 e 1 0 ]
+"788
+[v _my_floor my_floor `(i  1 e 2 0 ]
+"800
+[v _update_ball_direction update_ball_direction `(v  1 e 1 0 ]
+"814
+[v _updateANDset_ball_position updateANDset_ball_position `(v  1 e 1 0 ]
+"856
+[v _main main `(v  1 e 1 0 ]
+"759 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f913.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+[s S76 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"786
+[s S82 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S87 . 1 `S76 1 . 1 0 `S82 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES87  1 e 1 @20 ]
+[s S102 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1827
+[s S111 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S116 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S122 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S127 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S132 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S137 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S142 . 1 `S102 1 . 1 0 `S111 1 . 1 0 `S116 1 . 1 0 `S122 1 . 1 0 `S127 1 . 1 0 `S132 1 . 1 0 `S137 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES142  1 e 1 @148 ]
+"5388
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"5391
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"5394
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"5400
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"5430
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"5436
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"5439
+[v _RC7 RC7 `VEb  1 e 0 @63 ]
+"6123
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1072 ]
+"6126
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"6129
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1074 ]
+"6135
+[v _TRISB4 TRISB4 `VEb  1 e 0 @1076 ]
+"6159
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"6165
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"6168
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/errno.c
+[v _errno errno `i  1 e 2 0 ]
+"213 /Users/s/MPLABXProjects/LCD_Display_SPI.X/main.c
+[v _mode mode `uc  1 e 1 0 ]
+"759
+[v _ball_x_direction ball_x_direction `uc  1 e 1 0 ]
+"760
+[v _ball_y_direction ball_y_direction `uc  1 e 1 0 ]
+"763
+[v _ball_x_position ball_x_position `uc  1 e 1 0 ]
+"764
+[v _ball_y_position ball_y_position `uc  1 e 1 0 ]
+"766
+[v _ball_x_positions ball_x_positions `[3]uc  1 e 3 0 ]
+"767
+[v _ball_y_positions ball_y_positions `[3]uc  1 e 3 0 ]
+"774
+[v _normalized_dx normalized_dx `f  1 e 4 0 ]
+"775
+[v _normalized_dy normalized_dy `f  1 e 4 0 ]
+"856
+[v _main main `(v  1 e 1 0 ]
+{
+"916
+} 0
+"814
+[v _updateANDset_ball_position updateANDset_ball_position `(v  1 e 1 0 ]
+{
+"821
+[v updateANDset_ball_position@change_in_y_position change_in_y_position `uc  1 a 1 30 ]
+"820
+[v updateANDset_ball_position@change_in_x_position change_in_x_position `uc  1 a 1 29 ]
+"851
+} 0
+"800
+[v _update_ball_direction update_ball_direction `(v  1 e 1 0 ]
+{
+"813
+} 0
+"781
+[v _normalized normalized `(v  1 e 1 0 ]
+{
+"782
+[v normalized@length length `f  1 a 4 24 ]
+"781
+[v normalized@x x `f  1 p 4 16 ]
+[v normalized@y y `f  1 p 4 20 ]
+"786
+} 0
+"777
+[v _vector_length vector_length `(f  1 e 4 0 ]
+{
+[v vector_length@x x `f  1 p 4 0 ]
+[v vector_length@y y `f  1 p 4 4 ]
+"780
+} 0
+"9 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 4 0 ]
+{
+"14
+[v sqrt@frac frac `ul  1 a 4 76 ]
+[s S711 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"11
+[s S716 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S719 . 4 `l 1 i 4 0 `d 1 f 4 0 `S711 1 fAsBytes 4 0 `S716 1 fAsWords 4 0 ]
+[v sqrt@root root `S719  1 a 4 72 ]
+"16
+[v sqrt@grs grs `ul  1 a 4 66 ]
+"15
+[v sqrt@tfrac tfrac `ul  1 a 4 61 ]
+"13
+[v sqrt@exp exp `i  1 a 2 70 ]
+"12
+[v sqrt@p p `uc  1 a 1 65 ]
+[v sqrt@i i `uc  1 a 1 60 ]
+[v sqrt@sign sign `uc  1 a 1 59 ]
+"9
+[v sqrt@a a `d  1 p 4 51 ]
+"159
+} 0
+"5 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/pow.c
+[v _pow pow `(d  1 e 4 0 ]
+{
+"8
+[v pow@yi yi `ul  1 a 4 47 ]
+"7
+[v pow@sign sign `uc  1 a 1 46 ]
+"5
+[v pow@x x `d  1 p 4 30 ]
+[v pow@y y `d  1 p 4 34 ]
+"31
+} 0
+"5 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/log.c
+[v _log log `(d  1 e 4 0 ]
+{
+"7
+[v log@exponent exponent `i  1 a 2 15 ]
+"5
+[v log@x x `d  1 p 4 11 ]
+"9
+[v log@coeff coeff `DC[9]d  1 s 36 coeff ]
+"36
+} 0
+"12 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/exp.c
+[v _exp exp `(d  1 e 4 0 ]
+{
+"14
+[v exp@exponent exponent `i  1 a 2 27 ]
+"15
+[v exp@sign sign `uc  1 a 1 29 ]
+"12
+[v exp@x x `d  1 p 4 19 ]
+"17
+[v exp@coeff coeff `DC[10]d  1 s 40 coeff ]
+"57
+} 0
+"277 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/frexp.c
+[v _ldexp ldexp `(d  1 e 4 0 ]
+{
+[v ldexp@value value `d  1 p 4 11 ]
+[v ldexp@newexp newexp `i  1 p 2 15 ]
+"307
+} 0
+"13 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/floor.c
+[v _floor floor `(d  1 e 4 0 ]
+{
+"15
+[v floor@i i `d  1 a 4 0 ]
+"16
+[v floor@expon expon `i  1 a 2 4 ]
+"13
+[v floor@x x `d  1 p 4 75 ]
+"30
+} 0
+"254 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/frexp.c
+[v _frexp frexp `(d  1 e 4 0 ]
+{
+[v frexp@value value `d  1 p 4 22 ]
+[v frexp@eptr eptr `*.4i  1 p 1 26 ]
+"274
+} 0
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 10 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 14 ]
+"12
+} 0
+"10 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 6 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 5 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 10 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 4 ]
+"44
+} 0
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 4 0 ]
+{
+"6
+[v eval_poly@res res `d  1 a 4 7 ]
+"4
+[v eval_poly@x x `d  1 p 4 0 ]
+[v eval_poly@d d `*.24DCd  1 p 1 4 ]
+[v eval_poly@n n `i  1 p 2 5 ]
+"12
+} 0
+"8 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S711 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S716 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S719 . 4 `l 1 i 4 0 `d 1 f 4 0 `S711 1 fAsBytes 4 0 `S716 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S719  1 a 4 49 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 45 ]
+[s S788 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S791 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S788 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S791  1 a 2 53 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 44 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 43 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 42 ]
+"8
+[v ___flmul@b b `d  1 p 4 29 ]
+[v ___flmul@a a `d  1 p 4 33 ]
+"205
+} 0
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"242 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 0 ]
+[v ___flsub@b b `d  1 p 4 4 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 74 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 73 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 72 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 71 ]
+"10
+[v ___fladd@b b `d  1 p 4 55 ]
+[v ___fladd@a a `d  1 p 4 59 ]
+"237
+} 0
+"15 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"8 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 7 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 0 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 5 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 12 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 11 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 4 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
+"788 /Users/s/MPLABXProjects/LCD_Display_SPI.X/main.c
+[v _my_floor my_floor `(i  1 e 2 0 ]
+{
+"795
+[v my_floor@n n `i  1 a 2 0 ]
+"788
+[v my_floor@f f `f  1 p 4 10 ]
+"797
+} 0
+"43 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"397 /Users/s/MPLABXProjects/LCD_Display_SPI.X/main.c
+[v _setDisplayFillingMode setDisplayFillingMode `(v  1 e 1 0 ]
+{
+[v setDisplayFillingMode@hORv hORv `uc  1 a 1 wreg ]
+"406
+[v setDisplayFillingMode@madctl madctl `uc  1 a 1 8 ]
+"397
+[v setDisplayFillingMode@hORv hORv `uc  1 a 1 wreg ]
+"406
+[v setDisplayFillingMode@hORv hORv `uc  1 a 1 7 ]
+"430
+} 0
+"310
+[v _sendCommand_and_8bit_Data sendCommand_and_8bit_Data `(v  1 e 1 0 ]
+{
+[v sendCommand_and_8bit_Data@commandByte commandByte `uc  1 a 1 wreg ]
+[v sendCommand_and_8bit_Data@commandByte commandByte `uc  1 a 1 wreg ]
+[v sendCommand_and_8bit_Data@first_byte first_byte `uc  1 p 1 3 ]
+"312
+[v sendCommand_and_8bit_Data@commandByte commandByte `uc  1 a 1 4 ]
+"321
+} 0
+"653
+[v _setAllDisplayPixels_Hard setAllDisplayPixels_Hard `(v  1 e 1 0 ]
+{
+"659
+[v setAllDisplayPixels_Hard@y y `i  1 a 2 2 ]
+"658
+[v setAllDisplayPixels_Hard@x x `i  1 a 2 0 ]
+"653
+[v setAllDisplayPixels_Hard@color color `ui  1 p 2 10 ]
+"667
+} 0
+"605
+[v _sendCommand_Hard sendCommand_Hard `(v  1 e 1 0 ]
+{
+[v sendCommand_Hard@commandByte commandByte `uc  1 a 1 wreg ]
+[v sendCommand_Hard@commandByte commandByte `uc  1 a 1 wreg ]
+"607
+[v sendCommand_Hard@commandByte commandByte `uc  1 a 1 1 ]
+"614
+} 0
+"296
+[v _sendCommand sendCommand `(v  1 e 1 0 ]
+{
+[v sendCommand@commandByte commandByte `uc  1 a 1 wreg ]
+[v sendCommand@commandByte commandByte `uc  1 a 1 wreg ]
+"298
+[v sendCommand@commandByte commandByte `uc  1 a 1 3 ]
+"305
+} 0
+"358
+[v _spiWrite spiWrite `(v  1 e 1 0 ]
+{
+[v spiWrite@b b `uc  1 a 1 wreg ]
+"359
+[v spiWrite@bit bit `i  1 a 2 1 ]
+"358
+[v spiWrite@b b `uc  1 a 1 wreg ]
+[v spiWrite@b b `uc  1 a 1 0 ]
+"371
+} 0
+"254
+[v _SPI_SCK_LOW SPI_SCK_LOW `(v  1 e 1 0 ]
+{
+"256
+} 0
+"257
+[v _SPI_SCK_HIGH SPI_SCK_HIGH `(v  1 e 1 0 ]
+{
+"259
+} 0
+"247
+[v _SPI_MOSI_LOW SPI_MOSI_LOW `(v  1 e 1 0 ]
+{
+"249
+} 0
+"250
+[v _SPI_MOSI_HIGH SPI_MOSI_HIGH `(v  1 e 1 0 ]
+{
+"252
+} 0
+"265
+[v _init_Softwear_SPI init_Softwear_SPI `(v  1 e 1 0 ]
+{
+"291
+} 0
+"580
+[v _init_Hardwear_SPI init_Hardwear_SPI `(v  1 e 1 0 ]
+{
+"603
+} 0
+"668
+[v _drawFastHLine_Hard drawFastHLine_Hard `(v  1 e 1 0 ]
+{
+[v drawFastHLine_Hard@start_x start_x `c  1 a 1 wreg ]
+"674
+[v drawFastHLine_Hard@x_colum_horizontal x_colum_horizontal `i  1 a 2 4 ]
+"671
+[v drawFastHLine_Hard@x2 x2 `uc  1 a 1 3 ]
+"668
+[v drawFastHLine_Hard@start_x start_x `c  1 a 1 wreg ]
+[v drawFastHLine_Hard@length length `c  1 p 1 10 ]
+[v drawFastHLine_Hard@in_HLine_y in_HLine_y `c  1 p 1 11 ]
+[v drawFastHLine_Hard@color color `ui  1 p 2 12 ]
+[v drawFastHLine_Hard@start_x start_x `c  1 a 1 6 ]
+"680
+} 0
+"643
+[v _my_setAddrWindow_Hard my_setAddrWindow_Hard `(v  1 e 1 0 ]
+{
+[v my_setAddrWindow_Hard@x_start x_start `ui  1 p 2 2 ]
+[v my_setAddrWindow_Hard@y_start y_start `ui  1 p 2 4 ]
+[v my_setAddrWindow_Hard@x_finish x_finish `ui  1 p 2 6 ]
+[v my_setAddrWindow_Hard@y_finish y_finish `ui  1 p 2 8 ]
+"651
+} 0
+"615
+[v _writeCommand_Hard writeCommand_Hard `(v  1 e 1 0 ]
+{
+[v writeCommand_Hard@cmd cmd `uc  1 a 1 wreg ]
+[v writeCommand_Hard@cmd cmd `uc  1 a 1 wreg ]
+[v writeCommand_Hard@cmd cmd `uc  1 a 1 1 ]
+"619
+} 0
+"240
+[v _SPI_DC_LOW SPI_DC_LOW `(v  1 e 1 0 ]
+{
+"242
+} 0
+"243
+[v _SPI_DC_HIGH SPI_DC_HIGH `(v  1 e 1 0 ]
+{
+"245
+} 0
+"625
+[v _SPI_WRITE16_Hard SPI_WRITE16_Hard `(v  1 e 1 0 ]
+{
+"627
+[v SPI_WRITE16_Hard@second_B second_B `uc  1 a 1 4 ]
+"626
+[v SPI_WRITE16_Hard@first_B first_B `uc  1 a 1 3 ]
+"625
+[v SPI_WRITE16_Hard@w w `ui  1 p 2 1 ]
+"630
+} 0
+"620
+[v _spi_send_recv spi_send_recv `(v  1 e 1 0 ]
+{
+[v spi_send_recv@data data `uc  1 a 1 wreg ]
+[v spi_send_recv@data data `uc  1 a 1 wreg ]
+[v spi_send_recv@data data `uc  1 a 1 0 ]
+"624
+} 0
+"233
+[v _SPI_CS_LOW SPI_CS_LOW `(v  1 e 1 0 ]
+{
+"235
+} 0
+"236
+[v _SPI_CS_HIGH SPI_CS_HIGH `(v  1 e 1 0 ]
+{
+"238
+} 0

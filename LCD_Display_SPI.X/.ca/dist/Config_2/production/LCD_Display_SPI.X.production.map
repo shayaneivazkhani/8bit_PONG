@@ -1,0 +1,27 @@
+Microchip MPLAB XC8 Compiler V2.40
+
+Linker command line:
+
+-W-3 --edf=/Applications/microchip/xc8/v2.40/pic/dat/20220703182018_en.msgs \
+  -cn -h+.ca/dist/Config_2/production/LCD_Display_SPI.X.production.sym \
+  --cmf=.ca/dist/Config_2/production/LCD_Display_SPI.X.production.cmf -z \
+  -w9 --disl=596:off --norlf -Q16F913 -o/tmp/xcYYiTupn \
+  --defsym=__MPLAB_BUILD=1 \
+  -M.ca/dist/Config_2/production/LCD_Display_SPI.X.production.map \
+  --md=/tmp/xc866AQz4.dat -E1 -ver=XC8 Compiler --acfsm=1493 \
+  -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 \
+  -ACONST=00h-0FFhx16 -AENTRY=00h-0FFhx16 -ACOMMON=070h-07Fh \
+  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0120h-016Fh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0120h-016Fh -ASFR0=00h-01Fh -ASFR1=080h-09Fh \
+  -ASFR2=0100h-011Fh -ASFR3=0180h-01EFh -ACONFIG=02007h-02007h -DCONFIG=2 \
+  -AIDLOC=02000h-02003h -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
+  -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
+  -DENTRY=2 -preset_vec=00h,intentry,init,end_init -ppowerup=CODE \
+  -pcinit=CODE -pfunctab=ENTRY -k /tmp/xcNXaC8A8.o \
+  .ca/dist/Config_2/production/LCD_Display_SPI.X.production.o 
+
+Object code version is 3.11
+
+Machine type is 16F913
+

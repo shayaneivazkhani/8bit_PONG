@@ -1,0 +1,224 @@
+make -f nbproject/Makefile-defaultActiveCA.mk SUBPROJECTS= .clean-conf
+make[1]: Entering directory '/Users/s/MPLABXProjects/LCD_Display_SPI.X'
+rm -f  -r .ca/build/defaultActiveCA/production
+rm -f  -r .ca/dist/defaultActiveCA/production
+make[1]: Leaving directory '/Users/s/MPLABXProjects/LCD_Display_SPI.X'
+[32mCLEAN SUCCESSFUL (total time: 106ms)[0m
+make -f nbproject/Makefile-defaultActiveCA.mk SUBPROJECTS= .build-conf
+make[1]: Entering directory '/Users/s/MPLABXProjects/LCD_Display_SPI.X'
+make  -f nbproject/Makefile-defaultActiveCA.mk .ca/dist/defaultActiveCA/production/LCD_Display_SPI.X.production.hex
+make[2]: Entering directory '/Users/s/MPLABXProjects/LCD_Display_SPI.X'
+"/Applications/microchip/xc8/v2.40/bin/xc8-cc"  -mcpu=16F913 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/defaultActiveCA/production/main.p1 main.c 
+::: advisory: (2049) C99 compliant libraries are currently not available for baseline or mid-range devices, or for enhanced mid-range devices using a reentrant stack; using C90 libraries
+main.c:463:19: warning: implicit conversion changes signedness: 'int16_t' (aka 'int') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    setAddrWindow(x, y, 1, 1);
+    ~~~~~~~~~~~~~ ^
+main.c:463:22: warning: implicit conversion changes signedness: 'int16_t' (aka 'int') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    setAddrWindow(x, y, 1, 1);
+    ~~~~~~~~~~~~~    ^
+main.c:511:35: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+    uint8_t x2 = start_x + length - 1;
+            ~~   ~~~~~~~~~~~~~~~~~^~~
+main.c:512:22: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow(start_x, in_HLine_y, x2, in_HLine_y);
+    ~~~~~~~~~~~~~~~~ ^~~~~~~
+main.c:512:31: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow(start_x, in_HLine_y, x2, in_HLine_y);
+    ~~~~~~~~~~~~~~~~          ^~~~~~~~~~
+main.c:512:47: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow(start_x, in_HLine_y, x2, in_HLine_y);
+    ~~~~~~~~~~~~~~~~                          ^~~~~~~~~~
+main.c:524:35: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+    uint8_t y2 = start_y + length - 1;
+            ~~   ~~~~~~~~~~~~~~~~~^~~
+main.c:525:22: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow(in_VLine_x, start_y, in_VLine_x, y2);
+    ~~~~~~~~~~~~~~~~ ^~~~~~~~~~
+main.c:525:34: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow(in_VLine_x, start_y, in_VLine_x, y2);
+    ~~~~~~~~~~~~~~~~             ^~~~~~~
+main.c:525:43: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow(in_VLine_x, start_y, in_VLine_x, y2);
+    ~~~~~~~~~~~~~~~~                      ^~~~~~~~~~
+main.c:559:12: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spiWrite(x1); 
+  ~~~~~~~~ ^~
+main.c:560:12: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spiWrite(x2);
+  ~~~~~~~~ ^~
+main.c:562:12: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spiWrite(y1); 
+  ~~~~~~~~ ^~
+main.c:563:12: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spiWrite(y2);
+  ~~~~~~~~ ^~
+main.c:569:14: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spiWrite(x_start); 
+    ~~~~~~~~ ^~~~~~~
+main.c:570:14: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spiWrite(x_finish);
+    ~~~~~~~~ ^~~~~~~~
+main.c:572:14: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spiWrite(y_start); 
+    ~~~~~~~~ ^~~~~~~
+main.c:573:14: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spiWrite(y_finish);
+    ~~~~~~~~ ^~~~~~~~
+main.c:636:17: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spi_send_recv(x1); 
+  ~~~~~~~~~~~~~ ^~
+main.c:637:17: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spi_send_recv(x2);
+  ~~~~~~~~~~~~~ ^~
+main.c:639:17: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spi_send_recv(y1); 
+  ~~~~~~~~~~~~~ ^~
+main.c:640:17: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+  spi_send_recv(y2);
+  ~~~~~~~~~~~~~ ^~
+main.c:645:19: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spi_send_recv(x_start); 
+    ~~~~~~~~~~~~~ ^~~~~~~
+main.c:646:19: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spi_send_recv(x_finish);
+    ~~~~~~~~~~~~~ ^~~~~~~~
+main.c:648:19: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spi_send_recv(y_start); 
+    ~~~~~~~~~~~~~ ^~~~~~~
+main.c:649:19: warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+    spi_send_recv(y_finish);
+    ~~~~~~~~~~~~~ ^~~~~~~~
+main.c:671:35: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+    uint8_t x2 = start_x + length - 1;
+            ~~   ~~~~~~~~~~~~~~~~~^~~
+main.c:672:27: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow_Hard(start_x, in_HLine_y, x2, in_HLine_y);
+    ~~~~~~~~~~~~~~~~~~~~~ ^~~~~~~
+main.c:672:36: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow_Hard(start_x, in_HLine_y, x2, in_HLine_y);
+    ~~~~~~~~~~~~~~~~~~~~~          ^~~~~~~~~~
+main.c:672:52: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow_Hard(start_x, in_HLine_y, x2, in_HLine_y);
+    ~~~~~~~~~~~~~~~~~~~~~                          ^~~~~~~~~~
+main.c:684:35: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+    uint8_t y2 = start_y + length - 1;
+            ~~   ~~~~~~~~~~~~~~~~~^~~
+main.c:685:27: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow_Hard(in_VLine_x, start_y, in_VLine_x, y2);
+    ~~~~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~
+main.c:685:39: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow_Hard(in_VLine_x, start_y, in_VLine_x, y2);
+    ~~~~~~~~~~~~~~~~~~~~~             ^~~~~~~
+main.c:685:48: warning: implicit conversion changes signedness: 'int8_t' (aka 'signed char') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    my_setAddrWindow_Hard(in_VLine_x, start_y, in_VLine_x, y2);
+    ~~~~~~~~~~~~~~~~~~~~~                      ^~~~~~~~~~
+main.c:709:24: warning: implicit conversion changes signedness: 'int16_t' (aka 'int') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    setAddrWindow_Hard(x, y, 1, 1);
+    ~~~~~~~~~~~~~~~~~~ ^
+main.c:709:27: warning: implicit conversion changes signedness: 'int16_t' (aka 'int') to 'uint16_t' (aka 'unsigned int') [-Wsign-conversion]
+    setAddrWindow_Hard(x, y, 1, 1);
+    ~~~~~~~~~~~~~~~~~~    ^
+main.c:760:28: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+uint8_t ball_y_direction = -1;  // 1 == moving to up, -1 == moving down
+        ~~~~~~~~~~~~~~~~   ^~
+main.c:779:12: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wconversion]
+    return sqrt(pow(x, 2) + pow(y, 2) * 1.0);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c:803:28: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+        ball_x_direction = -1;
+                         ~ ^~
+main.c:809:28: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+        ball_y_direction = -1;
+                         ~ ^~
+main.c:804:32: warning: comparison of constant -1 with expression of type 'uint8_t' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+    } else if(ball_x_direction == -1 && ball_x_position <= 4) {
+              ~~~~~~~~~~~~~~~~ ^  ~~
+main.c:810:32: warning: comparison of constant -1 with expression of type 'uint8_t' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+    } else if(ball_y_direction == -1 && ball_y_position <= 2) {
+              ~~~~~~~~~~~~~~~~ ^  ~~
+main.c:830:32: warning: comparison of constant -1 with expression of type 'uint8_t' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+    } else if(ball_x_direction == -1) {
+              ~~~~~~~~~~~~~~~~ ^  ~~
+main.c:844:32: warning: comparison of constant -1 with expression of type 'uint8_t' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+    } else if(ball_y_direction == -1) {
+              ~~~~~~~~~~~~~~~~ ^  ~~
+main.c:910:28: warning: implicit conversion changes signedness: 'uint8_t' (aka 'unsigned char') to 'int8_t' (aka 'signed char') [-Wsign-conversion]
+        drawFastHLine_Hard(ball_x_positions[1], 3, ball_y_positions[0], RED);
+        ~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~~
+main.c:910:52: warning: implicit conversion changes signedness: 'uint8_t' (aka 'unsigned char') to 'int8_t' (aka 'signed char') [-Wsign-conversion]
+        drawFastHLine_Hard(ball_x_positions[1], 3, ball_y_positions[0], RED);
+        ~~~~~~~~~~~~~~~~~~                         ^~~~~~~~~~~~~~~~~~~
+main.c:911:28: warning: implicit conversion changes signedness: 'uint8_t' (aka 'unsigned char') to 'int8_t' (aka 'signed char') [-Wsign-conversion]
+        drawFastHLine_Hard(ball_x_positions[1], 3, ball_y_positions[1], RED);
+        ~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~~
+main.c:911:52: warning: implicit conversion changes signedness: 'uint8_t' (aka 'unsigned char') to 'int8_t' (aka 'signed char') [-Wsign-conversion]
+        drawFastHLine_Hard(ball_x_positions[1], 3, ball_y_positions[1], RED);
+        ~~~~~~~~~~~~~~~~~~                         ^~~~~~~~~~~~~~~~~~~
+main.c:912:28: warning: implicit conversion changes signedness: 'uint8_t' (aka 'unsigned char') to 'int8_t' (aka 'signed char') [-Wsign-conversion]
+        drawFastHLine_Hard(ball_x_positions[1], 3, ball_y_positions[2], RED);
+        ~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~~
+main.c:912:52: warning: implicit conversion changes signedness: 'uint8_t' (aka 'unsigned char') to 'int8_t' (aka 'signed char') [-Wsign-conversion]
+        drawFastHLine_Hard(ball_x_positions[1], 3, ball_y_positions[2], RED);
+        ~~~~~~~~~~~~~~~~~~                         ^~~~~~~~~~~~~~~~~~~
+50 warnings generated.
+"/Applications/microchip/xc8/v2.40/bin/xc8-cc"  -mcpu=16F913 -Wl,-Map=.ca/dist/defaultActiveCA/production/LCD_Display_SPI.X.production.map  -DXPRJ_defaultActiveCA=defaultActiveCA  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto      -Wl,--memorysummary,.ca/dist/defaultActiveCA/production/memoryfile.xml -o .ca/dist/defaultActiveCA/production/LCD_Display_SPI.X.production.elf  .ca/build/defaultActiveCA/production/main.p1     
+::: advisory: (2049) C99 compliant libraries are currently not available for baseline or mid-range devices, or for enhanced mid-range devices using a reentrant stack; using C90 libraries
+main.c:224:: warning: (520) function "_startWrite" is never called
+main.c:227:: warning: (520) function "_endWrite" is never called
+main.c:322:: warning: (520) function "_sendCommand_and_16bit_Data" is never called
+main.c:343:: warning: (520) function "_writeCommand" is never called
+main.c:382:: warning: (520) function "_SPI_WRITE16" is never called
+main.c:432:: warning: (520) function "_setAllDisplayPixels" is never called
+main.c:458:: warning: (520) function "_drawPixel" is never called
+main.c:470:: warning: (520) function "_drawLine" is never called
+main.c:508:: warning: (520) function "_drawFastHLine" is never called
+main.c:521:: warning: (520) function "_drawFastVLine" is never called
+main.c:550:: warning: (520) function "_setAddrWindow" is never called
+main.c:567:: warning: (520) function "_my_setAddrWindow" is never called
+main.c:632:: warning: (520) function "_setAddrWindow_Hard" is never called
+main.c:681:: warning: (520) function "_drawFastVLine_Hard" is never called
+main.c:704:: warning: (520) function "_drawPixel_Hard" is never called
+main.c:715:: warning: (520) function "_drawLine_Hard" is never called
+main.c:804:: warning: (764) mismatched comparison
+main.c:810:: warning: (764) mismatched comparison
+main.c:830:: warning: (764) mismatched comparison
+main.c:844:: warning: (764) mismatched comparison
+:0:: error: (1347) can't find 0xD5 words (0xd5 withtotal) for psect "text10" in class "CODE" (largest unused contiguous range 0x72)
+Non line specific message::: advisory: (1493) updated 32-bit floating-point routines might trigger "can't find space" messages appearing after updating to this release; consider using the smaller 24-bit floating-point types
+:0:: error: (1347) can't find 0xD2 words (0xd2 withtotal) for psect "text15" in class "CODE" (largest unused contiguous range 0x72)
+:0:: error: (1347) can't find 0xBC words (0xbc withtotal) for psect "text9" in class "CODE" (largest unused contiguous range 0x72)
+:0:: error: (1347) can't find 0xBA words (0xba withtotal) for psect "text13" in class "CODE" (largest unused contiguous range 0x72)
+:0:: error: (1347) can't find 0xA2 words (0xa2 withtotal) for psect "text14" in class "CODE" (largest unused contiguous range 0x72)
+:0:: error: (1347) can't find 0x96 words (0x96 withtotal) for psect "maintext" in class "CODE" (largest unused contiguous range 0x72)
+:0:: error: (1347) can't find 0x76 words (0x76 withtotal) for psect "text23" in class "CODE" (largest unused contiguous range 0x72)
+:0:: error: (1347) can't find 0x5A words (0x5a withtotal) for psect "text11" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x52 words (0x52 withtotal) for psect "strings" in class "STRING" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x51 words (0x51 withtotal) for psect "text26" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x50 words (0x50 withtotal) for psect "text12" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x50 words (0x50 withtotal) for psect "text36" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x4E words (0x4e withtotal) for psect "text18" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x40 words (0x40 withtotal) for psect "text34" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x3B words (0x3b withtotal) for psect "text24" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x2C words (0x2c withtotal) for psect "text29" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x27 words (0x27 withtotal) for psect "text17" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x1D words (0x1d withtotal) for psect "text2" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x1D words (0x1d withtotal) for psect "text37" in class "CODE" (largest unused contiguous range 0x16)
+:0:: error: (1347) can't find 0x16 words (0x16 withtotal) for psect "text25" in class "CODE" (largest unused contiguous range 0x15)
+:0:: error: (1347) can't find 0x12 words (0x12 withtotal) for psect "text28" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0x11 words (0x11 withtotal) for psect "inittext" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0xF words (0xf withtotal) for psect "text35" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0xD words (0xd withtotal) for psect "text41" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0xC words (0xc withtotal) for psect "text38" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0xC words (0xc withtotal) for psect "text42" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0xB words (0xb withtotal) for psect "text20" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0xA words (0xa withtotal) for psect "idataBANK2" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0x8 words (0x8 withtotal) for psect "clrtext" in class "CODE" (largest unused contiguous range 0x3)
+:0:: error: (1347) can't find 0x4 words (0x4 withtotal) for psect "text30" in class "CODE" (largest unused contiguous range 0x3)
+:0:: advisory: (1) too many errors (31)
+(908) exit status = 1
+make[2]: Leaving directory '/Users/s/MPLABXProjects/LCD_Display_SPI.X'
+make[1]: Leaving directory '/Users/s/MPLABXProjects/LCD_Display_SPI.X'
+[31mmake[2]: *** [nbproject/Makefile-defaultActiveCA.mk:139: .ca/dist/defaultActiveCA/production/LCD_Display_SPI.X.production.hex] Error 1
+make[1]: *** [nbproject/Makefile-defaultActiveCA.mk:91: .build-conf] Error 2
+make: *** [nbproject/Makefile-impl.mk:39: .build-impl] Error 2[0m
+[31mBUILD FAILED (exit value 2, total time: 2s)[0m
